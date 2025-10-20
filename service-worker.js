@@ -1,12 +1,11 @@
-
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open('my-cache').then((cache) => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/images/icons/192.png',
-        '/images/icons/512.png'
+        '/PWA/',
+        '/PWA/index.html',
+        '/PWA/images/icons/192.png',
+        '/PWA/images/icons/512.png'
       ]);
     })
   );

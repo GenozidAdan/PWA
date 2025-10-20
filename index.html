@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi PWA</title>
-  <link rel="manifest" href="/manifest.json">
-  <meta name="theme-color" content="#4CAF50">
-  
+  <link rel="manifest" href="/PWA/manifest.json" />
+  <meta name="theme-color" content="#4CAF50" />
 </head>
 <body>
   <h1>Bienvenido a Mi PWA</h1>
@@ -16,7 +15,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker
-          .register('/service-worker.js')
+          .register('/PWA/service-worker.js')
           .then((registration) => {
             console.log('Service Worker registrado con éxito:', registration);
           })
