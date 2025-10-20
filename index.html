@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi PWA</title>
-  <!-- Manifest con ruta correcta -->
-  <link rel="manifest" href="/PWA/manifest.json" />
+  <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#4CAF50" />
 </head>
 <body>
@@ -16,7 +15,7 @@
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker
-          .register('/PWA/service-worker.js')
+          .register('service-worker.js')
           .then((registration) => {
             console.log('Service Worker registrado con éxito:', registration);
           })
